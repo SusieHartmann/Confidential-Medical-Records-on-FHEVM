@@ -1,0 +1,45 @@
+{
+  "name": "fhevm-confidential-medical-records",
+  "version": "1.0.0",
+  "description": "Privacy-preserving medical records system using FHEVM and Fully Homomorphic Encryption",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "typechain": "hardhat typechain"
+  },
+  "keywords": [
+    "fhevm",
+    "fully-homomorphic-encryption",
+    "medical-records",
+    "privacy",
+    "healthcare",
+    "blockchain",
+    "zama",
+    "confidential-computing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.5",
+    "chai": "^4.4.1",
+    "hardhat": "^2.19.5",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@fhevm/contracts": "^0.5.0",
+    "dotenv": "^16.4.1",
+    "ethers": "^6.10.0"
+  }
+}
