@@ -1,5 +1,6 @@
-// Anonymous Medical Records DApp
-const CONTRACT_ADDRESS = "0x5344e629D343d717Ad15E114d560dc1d07A7465e"; // Anonymous Medical Records contract address
+// Confidential Medical Records DApp - FHEVM
+// TODO: Update this address after deploying your contract
+const CONTRACT_ADDRESS = "0xYOUR_CONTRACT_ADDRESS_HERE"; // Replace with your deployed contract address
 const CONTRACT_ABI = [
     {
         "inputs": [],
@@ -683,7 +684,7 @@ let currentAccount;
 
 // Initialize the DApp
 async function init() {
-    console.log("Initializing Anonymous Medical Records DApp...");
+    console.log("Initializing Confidential Medical Records DApp...");
 
     // Check if MetaMask is installed
     if (typeof window.ethereum !== 'undefined') {
@@ -702,7 +703,7 @@ async function init() {
             console.log('Error checking existing accounts:', error);
         }
     } else {
-        showStatus('Please install MetaMask to use this DApp', 'error');
+        showStatus('Please install MetaMask to use this application. Visit https://metamask.io to download.', 'error');
     }
 }
 
@@ -789,7 +790,7 @@ async function connectWallet() {
             await getSystemStats();
         } catch (error) {
             console.log('Could not load system stats, contract may not be deployed:', error.message);
-            showStatus('Wallet connected! Note: Contract may not be deployed on this network.', 'info');
+            showStatus('Wallet connected! Note: Please ensure the contract is deployed on this network and the address is correct in script.js', 'info');
         }
 
     } catch (error) {
