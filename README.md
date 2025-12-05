@@ -6,6 +6,10 @@
 
 Privacy-preserving medical records system using **Fully Homomorphic Encryption (FHE)** and the **FHEVM** protocol. This project demonstrates advanced patterns for managing confidential healthcare data on-chain while maintaining strict patient privacy and fine-grained access control.
 
+Live: https://confidential-medical-records-on-fhe.vercel.app/
+
+Video: demo1.mp4 and demo2.mp4 or https://streamable.com/z63ajj  
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
